@@ -1,1 +1,326 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+
+/*===== VARIABLES CSS =====*/
+:root{
+
+/*=== Header size === */
+  --header-height: 3rem;
+  --font-semi: 600;
+
+
+/*===== Colors =====*/
+  --first-color: lightblue;
+  --second-color: white;
+  --black: black;
+  --third-color: #3393b2;
+  --fourth-color: #1e0979a2; 
+
+/* === Font size ===*/
+  --body-font: sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+
+/* === Margins ==*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+/* === z-index ===*/
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* === general setup ===*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: lightblue;
+    width: 100%;
+}
+  
+header{
+  display: inline;
+
+}
+
+
+section {
+  flex-direction: column; 
+  margin-right: right; 
+  columns: 2;
+  display: grid;
+  grid-gap: 25rem;
+  grid-template-columns: 200px 200px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: #3393b2;
+  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+}
+
+
+.about_us_page {
+    text-align: center;
+    font: cursive; 
+    color: #1e0979a2; 
+    font-size: 48px; 
+    font-family: 'Signika', sans-serif; 
+    padding-bottom: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.section{
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.section-title{
+  margin-bottom: var(--mb-6);
+}
+
+.section-title::after{
+  width: 80px;
+  top: 3rem;
+}
+
+.nav{
+  height: calc(var(--header-height) + 1rem);
+}
+.nav__list{
+  display: flex;
+  padding-top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float:right;
+  right: 50px;
+  position: relative;
+}
+
+
+.nav__item{
+  margin-left: var(--mb-6);
+  margin-bottom: 0;
+  float:right;
+}
+
+#nav__logo{
+  color: white;
+  display: flex;
+  font: cursive; 	
+}
+
+.nav__toggle{
+  display: none;
+}
+.nav__link{
+  color: var(--second-color);
+}
+
+.margin {
+    display: flex;
+    flex-direction: column; 
+    margin-right: right; 
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+    flex: 50%; 
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+.container {
+    padding: 0 16px;
+  }
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.title {
+    color: grey;
+  }
+  
+.button2 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    border: none;
+    background: none;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: darkblue;
+    color: rgb(228, 224, 224);
+    border-radius: 100px;
+    cursor:pointer;
+  }
+  
+.button2:hover {
+    background-color: #555;
+  }
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
+
+.noMargin {
+    margin: 0px;
+}
+
+.nav__menu {
+    height: calc(var(--header-height) + 1rem);
+}
+
+#nav-menu{
+    
+    height : d;
+}
+
+
+.description {
+
+    height: d;
+}
+    
+.nav__item {
+    margin-left: var(--mb-6);
+    margin-bottom: var(--mb-4);    
+}
+    
+.nav__link_active {
+
+    height: d;
+}
+    
+.whoAreUs{
+    height: d;
+}
+
+
+.name{
+     height: d;
+}
+    
+.discription{
+     height: d;
+}
+    
+.email{
+    height: d;
+}
+    
+.title{
+    height: d;
+}
+    
+.button2{
+    height: d;
+}
+
+
+.badge{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: var(--fourth-color);
+  color: white;
+}
+
+
+footer 
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;  
+}
+
+#pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#contentWrap {
+    padding-bottom: 2.5rem;    
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5vh;           
+    background-color: #212318; 
+    display: flex;
+    justify-content: center;
+}
+
+#copyright {
+    top: 20 px;
+    color: white;
+}
+.footerButton  {
+    padding: 10 px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+
+}
