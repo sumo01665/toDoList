@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/vector-cartoon-to-do-list-icon-comic-style-checklist-task-l-sign-illustration-pictogram-reminder-business-splash-effect-concept-128146695.jpg" 
+          sizes="50000x500000" alt ="Favicon picture" type="image/x-icon">
+
+
+    <!-- Link and script-->
+    <link rel="stylesheet" href="style.css" type = "text/css">
+    <script src = "script.js" type = "text/javascript"></script>
+
+    <!-- fullcalendar JavaScript Calendar Setup -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+
+    <title>To Do List</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+    <!-- navigation bar-->
+    <div class="nav__menu" id="nav-menu">
+    
+        
+        <ul class="nav__list">
+            <li class="nav__item"><a href="InstantSchedule (2).html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="AboutUs.html" class="nav__link active"> About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link" class = "Notification"> Notification</a></li>
+            <span class="badge">3</span>
+        </ul>
+        
+    </div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        </nav>
+    </header>
+
+    <h1>Instant Schedule</h1>
+    <h4>Why use our software over others?</h4>
+    <p>Instant Schedule is an online “to-do list" developer that makes people’s lives simpler.
+         This is because we use an easy, useful and mindful setup to get you through your daily tasks perfectly without being irked.
+          For example, setting up the site is easy with only a few clicks and once you get started with Instant Schedule, you will never miss a due date again. </p>
+    <h3>How can we help make you life easier?</h3>
+    <p> We can make your life easier by handling all the stresses of planning, remembering and organizing you time so that you can only worry
+        about putting in the best effort. </p>  
+    <img src = "home-study.jpg" alt="Studying at home" width = "100" height = "100"></img>
+    <img src = "Women-playing-soccer-release.jpg" alt = "Sports" width="100" height = "100"></img>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div class = "start">
+        <button id = "startButton">Get Started</button>
+    </div>
+    <div class = "main fadeOut">
+        <div class = "container">
+        <div class = "row">
+                <div class = "col-xs-offset-5 col-sm-offset-5 col-md-offset-5 col-lg-offset-5" > <input type = "text" placeholder= "Enter a To do item" id = "toDo"></input></div>
+            </div>
+            <br></br>
+            <input type = "text" placeholder="Due date: YYYY/MM/DD" id = "toDoDate"></input>
+            <br><br>
+            <button id = "submit">Submit</button>
+            <div id='calendar'></div>
+        </div>
+            
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="pageContainer">
+        <div id="contentWrap">
+            <div class = "copyright">
+      
+            </div>
+            <div id="footer">
+                <em id = "copyright">Copyright & copy</em>
+            <ul>
+                <li><a href="AboutUs.html" class = "footerButton">About</a></li>
+            </ul>
+            </div>
+          <!-- all other page content -->
+        </div>
+      </div>
+    
+</footer>
+</body>
+</html>
+</html>
